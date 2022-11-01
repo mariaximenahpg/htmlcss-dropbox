@@ -1,0 +1,444 @@
+/*----------
+    Reset
+ ---------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*----------
+  Commons
+ ---------*/
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    text-align: left;
+    font-size: 80px;
+    padding-top: 50px;
+}
+
+h2{
+    font-size: 32px;
+}
+
+label{
+    margin-right: 50px;
+}
+
+.check i{
+    color: #0061ff;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.btn-blu{
+    background-color: #0061ff;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid #0061ff;
+}
+
+.container-big{
+    max-width: 1180px;
+    margin: auto;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.col{
+    max-width: 30%;
+}
+
+.col-big{
+    max-width: 70%;
+}
+
+.dettaglio-icona{
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    max-width: 100%;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+main a{
+    color: #0061ff;
+}
+
+hr{
+    width: 60px;
+    margin: 40px 0;
+}
+
+.h2-top{
+    margin-top: 160px;
+}
+
+.h2-bottom{
+    margin-bottom: 25px;
+}
+
+/*----------
+   Header
+ ---------*/
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+
+header > div{
+    justify-content: space-between;
+}
+
+header .flex{
+    background-color: white;
+}
+
+.navbar-col{
+    align-items: center;
+    padding: 20px 10px;
+}
+
+header li{
+    padding: 0 20px;
+}
+
+header ul{
+    align-items: center;
+}
+
+header .btn-blu{
+    margin-left: 20px;
+}
+
+/*----------
+   Main
+ ---------*/
+
+.hero{
+    background-color: #b4d0e7;
+    margin-top: 80px;
+}
+
+.hero .col,.hero .col-big{
+    position: relative;
+    top: 80px;
+    margin-top: -30px;
+}
+
+.hero button{
+    padding: 10px;
+    margin:20px;
+}
+
+.hero i{
+    font-size: 40px;
+    padding-top: 100px;
+}
+
+.opzioni{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.business-plan .flex{
+    justify-content: space-between;
+}
+
+.flex .dettaglio-offerte{
+    width: 30%;
+    border: 1px solid lightgray;
+}
+
+.dettaglio-offerte small{
+    display: block;
+}
+
+.dettaglio-offerte .dettaglio{
+    padding: 20px 20px 30px 20px;
+}
+
+.dettaglio h3{
+    margin-bottom: 10px;
+}
+
+.dettaglio small{
+    margin-bottom: 10px;
+}
+
+.dettaglio ul{
+    margin-top: 50px;
+}
+
+.dettaglio li{
+    margin: 10px;
+    display: flex;
+}
+
+.dettaglio i{
+    padding-right: 10px;
+}
+
+.dettaglio button{
+    margin: 30px 0;
+    font-size: 14px;
+    padding: 10px 20px;
+    width: calc(100% - 30px);
+}
+
+.dettaglio-enterprise{
+    border: 1px solid lightgray;
+    margin-top: 50px;
+}
+
+.dettaglio-enterprise .flex{
+    justify-content: space-between;
+}
+
+.dettaglio-enterprise .ufficio-vendite{
+    padding: 50px 30px;
+    position: static;
+}
+
+.dettaglio-enterprise .col{
+    padding: 30px 30px;
+}
+
+.dettaglio-enterprise .btn-blu{
+    padding: 10px 20px;
+}
+
+.dettaglio-enterprise small{
+    display: block;
+    margin: 20px 0;
+}
+
+.dettaglio-enterprise p{
+    font-size: 14px;
+}
+
+#contatta-partner{
+    margin-top: 130px;
+}
+
+#contatta-partner .col{
+    padding: 50px 0 0 50px;
+    width: 40%;
+}
+
+#contatta-partner .col-big{
+    width: 60%;
+}
+
+#contatta-partner p{
+    margin: 20px 0;
+}
+
+.operazioni{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.operazione{
+    margin-top: 30px;
+}
+
+#link-clienti .col-big{
+    width: 50%;
+}
+
+#link-clienti h2{
+    margin-bottom: 50px;
+}
+
+.clienti{
+    display: flex;
+    max-width: 100vw;
+    margin-top: 150px;
+}
+
+.customer-col{
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% / 3);
+    height: calc(100vw / 3);
+
+}
+
+.customer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50%;
+    padding: 60px;
+}
+
+.recensione-centrale{
+    display: block;
+    padding: 50px;
+    background-color:lightgrey;
+    overflow-y: auto;
+}
+
+.recensione-centrale img{
+    width: 60%;
+}
+
+.recensione-centrale p{
+    margin-bottom: 30px;
+}
+
+.recensione-centrale hr{
+    width: 100px;
+}
+
+.customer img{
+    filter: invert(100%);
+}
+
+#designit{
+    background-color: #a2d39b;
+    box-shadow:0 0 0 15px inset #d1e9cd;
+}
+
+#asu{
+    background-color: #61082b;
+}
+
+#uf{
+    background-color: #0093ce;
+}
+
+#topps{
+    background-color: #ff1c1c;
+}
+
+#wbr{
+    background-color: #d5001f;
+}
+
+#hc{
+    background-color: #b4d0e7;
+}
+
+#lp{
+    background-color: #0d2481;
+}
+
+#cco{
+    background-color: #ffd830;
+}
+
+#prova-gratuita{
+    max-width: 100vw;
+    background-color: #b4d0e7;
+    padding: 100px;
+}
+
+#prova-gratuita .flex{
+    justify-content: space-between;
+}
+
+#prova-gratuita .col-big{
+    width: 40%;
+    color: #61082b;
+}
+
+#prova-gratuita .col{
+    width: 40%;
+}
+
+#prova-gratuita .btn{
+    padding: 10px 40px;
+    border: 1px solid white;
+}
+
+.faq{
+    padding: 30px;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
+
+.faq i{
+    margin-right: 10px;
+    font-size: 10px;
+}
+
+.faq:nth-child(2){
+    border-top: 1px solid lightgrey;
+    margin-top: 30px;
+}
+
+section:last-child{
+    margin-bottom: 150px;
+}
+
+/*----------
+   Footer
+ ---------*/
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .flex{
+    justify-content: space-between;
+    padding: 100px 0;
+}
+
+footer h3{
+    margin-bottom: 25px;
+}
+
+footer li{
+    margin: 10px 0;
+}
+
+.choose-language{
+    display: inline-block;
+    border-top: 1px solid white;
+    padding: 50px 0 50px 0;;
+    color: lightgrey;
+}
